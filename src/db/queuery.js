@@ -1,1 +1,0 @@
-const db = require('better-sqlite3')('regelenergie_daten.db')
