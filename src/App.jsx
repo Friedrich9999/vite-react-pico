@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import ReactECharts from 'echarts-for-react';
 import Spacer from './Spacer';
+import { useQuery } from '@tanstack/react-query';
+import Query from './fetcher';
+import Fetcher from './fetcher';
 
 function App() {
 
@@ -67,6 +70,11 @@ function App() {
     ]
   };
 
+  const {data} = useQuery({
+    queryKey: ['test'],
+    queryFn: getTodos
+  })
+
   const [graphtype, setGraphType] = useState(false)
 
   const handleSwitch = (e) => {
@@ -82,7 +90,6 @@ function App() {
 
   return (
     <>
-      <html data-theme="light">
       <header className='container'>
         <nav>
           <ul>
@@ -97,6 +104,7 @@ function App() {
         </nav>
       </header>
       <main className='container'>
+        <Fetcher></Fetcher>
         <h1>Datentool</h1>
         <article>
           <h3>Einstellungen</h3>
@@ -155,9 +163,13 @@ function App() {
       <footer className='container'>
         <p>footer here</p>
       </footer>
-      </html>
     </>
   )
+}
+
+const getTodos = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos")
+  return await response.json()
 }
 
 export default App
