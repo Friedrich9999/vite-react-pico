@@ -3,6 +3,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Datentool from './Datentool';
 import FAQ from './FAQ';
+import Kontakt from './Kontakte';
+import Erkenntnisse from './Erkenntnisse';
 
 function App() {
   return (
@@ -15,9 +17,10 @@ function App() {
             </ul>
             <ul>
               {/* 2. Hier sind die Links, die die URL ändern */}
+              <li><Link to="/erkentnisse">Unsere Erkenntnisse</Link></li>
               <li><Link to="/">Datentool</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
-              <li><Link to="/kontakt">Kontakt</Link></li>
+              <li><Link to="/kontakte">Kontakt</Link></li>
             </ul>
           </nav>
         </header>
@@ -27,7 +30,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Datentool />} />
             <Route path="/faq" element={<FAQ />} />
-            {/* <Route path="/kontakt" element={<Kontakt />} /> */}
+            <Route path="/erkentnisse" element={<Erkenntnisse />} />
+            <Route path="/kontakte" element={<Kontakt />} />
           </Routes>
         </main>
 
