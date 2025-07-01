@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import ReactECharts from 'echarts-for-react';
 import Spacer from './Spacer';
+import Fetcher from './fetcher';
+import Selector from './Selector';
+import OptionsLine from './optionsLine';
 
 function Datentool() {
   const option = {
@@ -63,35 +66,14 @@ function Datentool() {
             </div>
           </div>
         </div>
-        <Spacer size="1rem" />
-        <h4>Daten</h4>
-        <div className="grid">
-          <label>
-            Region
-            <select name="select" aria-label="Select" required>
-              <option>Deutschland</option>
-              <option>50Hertz</option>
-              <option>Amprion</option>
-              <option>TenneT TSO</option>
-              <option>TransnetBW</option>
-            </select>
-          </label>
-          <label>
-            Datentyp
-            <select name="select" aria-label="Select" required multiple size="6">
-              <option>Primärregelleistung</option>
-              <option>Sekundärregelleistung</option>
-              <option>Tertiärregelleistung</option>
-              <option>Solarleistung</option>
-              <option>Windleistung</option>
-            </select>
-          </label>
-        </div>
-      </article>
-      <article>
-        <h3>Ausgabe</h3>
-        <ReactECharts option={option} style={{ height: '800px' }}/>
-      </article>
+         <Spacer size="1rem"/> 
+          <h4>Daten</h4>
+          <OptionsLine regions={["Deutschland", "50Hertz", "Amprion", "TenneT TSO", "TransnetBW"]}/>
+        </article>
+        <article height='200%'>
+          <h3>Ausgabe</h3>
+          <Fetcher height="8000"></Fetcher>
+        </article>
     </>
   );
 }

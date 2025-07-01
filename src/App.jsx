@@ -6,6 +6,7 @@ import FAQ from './FAQ';
 import Kontakt from './Kontakte';
 import Erkenntnisse from './Erkenntnisse';
 
+
 function App() {
   return (
     // 1. Der Router umschließt die gesamte Anwendung
