@@ -1,75 +1,74 @@
-import { useState } from 'react'
+import { useState, useContext} from 'react'
 import { useQuery } from '@tanstack/react-query';
 import ReactECharts from 'echarts-for-react';
+import {FetchingContext} from './Datentool'
+import { CreateOptions } from './optionsCreator';
 
 function Fetcher() {
 
-  const {data, isPending} = useQuery({
-    queryKey: ['test  '],
-    queryFn: getTodos
+  const {graphType, startDate, endDate, regions, datatypes} = useContext(FetchingContext);
+
+  const {data, isLoading, isError, refetch} = useQuery({
+    enabled: false,
+    queryKey: ['1',graphType,startDate,endDate,regions,datatypes],
+    queryFn: () => fetchData(graphType,startDate, endDate, regions, datatypes)
   })
 
-  const option_heat = {
-    tooltip: {},
-    xAxis: {
-      type: 'category',
-      data: data ? data.xAxis : []
-    },
-    yAxis: {
-      type: 'category',
-      data: data ? data.yAxis : []
-    },
-    visualMap: {
-      min: data ? data.min : 0,
-      max: data ? data.max : 1,
-      calculable: true,
-      realtime: false,
-      inRange: {
-        color: [
-          '#313695',
-          '#4575b4',
-          '#74add1',
-          '#abd9e9',
-          '#e0f3f8',
-          '#ffffbf',
-          '#fee090',
-          '#fdae61',
-          '#f46d43',
-          '#d73027',
-          '#a50026'
-        ]
+  function getComponent(){
+    if (isLoading){
+      return <div aria-busy="true"></div>
+    }
+    if(data){
+      if (data.type == graphType){
+      const options = CreateOptions(graphType, data)
+      return <ReactECharts option={options} style={{height: "700px"}}/>
       }
-    },
-    series: [
-      {
-        name: 'Gaussian',
-        type: 'heatmap',
-        data: data ? data.data : [],
-        emphasis: {
-          itemStyle: {
-            borderColor: '#333',
-            borderWidth: 1
-          }
-        },
-        progressive: 1000,
-        animation: true
-      }
-    ]
-  };
+      return <></>
+    }
+    if (isError){
+      return <small>there was an error</small>
+    }
+  }
 
   return (
     <>
-      {isPending ? <div aria-busy="true"></div> : <ReactECharts option={option_heat}/>}
+    <label>
+      <button className='secondary' onClick={() => refetch()} disabled={isLoading}>Laden</button>
+      {getComponent()}
+    </label>
     </>
   )
 }
 
-const getTodos = async () => {
-  console.log("trying to access server")
-  const response = await fetch("http://localhost:8000/heatmap/2023-01-01/2025-01-01")
-  const dat = await response.json()
-  console.log(dat)
-  return dat
-}
+
+const fetchData = async (type,startDate, endDate, regions, dataTypes) => {
+  console.log("starting fetch");
+  // Create the request body as an object
+  const requestBody = {
+    startDate: startDate,
+    endDate: endDate,
+    regions: regions,
+    dataTypes: dataTypes
+  };
+  // Define the request options for a POST request
+  const requestOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json' // Set the content type to JSON
+    },
+    body: JSON.stringify(requestBody) // Convert the request body to a JSON string
+  };
+  const url = "http://localhost:8000/" + type
+  console.log("URL: " + url)
+  const response = await fetch(url, requestOptions);
+  console.log("fetch finished");
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
+  const data = await response.json();
+  console.log("final Data:");
+  console.log(data);
+  return data;
+};
 
 export default Fetcher
