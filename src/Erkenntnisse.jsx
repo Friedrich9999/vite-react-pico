@@ -2,6 +2,8 @@
 
 import React from 'react';
 import meinBild from './Bilder/Abbildung1.jpg';
+import Abbildung5 from './Bilder/Abbildung5.jpg';
+import Abbildung6 from './Bilder/Abbildung6.jpg';
 
 function Erkenntnisse() {
   return (
@@ -99,7 +101,9 @@ function Erkenntnisse() {
         Die morgen rampe ist vieler leichter auszugleichen da der zunehmender verbrauch zu den morgensstunden wenn leute gerade aufwachen mit der die erzeugung von solar überlagern.
       </p>
 
-      "BILD EINFÜGEN"
+      <figure><img src={Abbildung5} alt= "Abbildung5" />
+        <figcaption>Abbildung 5: Heatmap der abgerufenen SRL im Jahr 2015 (eigene Darstellung, Quelle: regelleistung.net).</figcaption>
+      </figure>
 
       <p>
         Wenn man die Grafiken von 2015 und 2024 vergleicht, fallen einige Unterschiede auf. Das Volumen der Sekundärregelleistung hat deutlich abgenommen, das deckt sich auch mit Abbildung 3, welche gezeigt hat, dass die Regelenergie seit 2015 ebenfalls abgenommen hat. Die Häufung in der Nähe der Abend- und Morgenstunden tritt in beiden Grafiken auf, wenn auch in der von 2024 deutlich geringer. Den Unterschied, welcher auf die deutlich verbesserten Prognosen zurückzuführen ist, sieht man in den grün markierten Bereichen. In diesem Bereich besteht der Strommix oft zu einem großen Anteil aus Solarstrom. In dem Lila Bereich sieht man einen sehr windreichen Frühling. Es gab auch Extremwetterereignisse.
@@ -110,6 +114,11 @@ function Erkenntnisse() {
       <p>
         Auch die Häufung zu den Abend- und Morgenstunden befinden sich nicht mehr auf diesen klaren Linien. Der Bereich in denen sich die SRL anhäuft verteilt sich immer mehr über einen größeren Zeitbereich. Das liegt an den verbesserten Last- und Wetterprognosen. Die Häufungen werden vermutlich nie ganz weggehen, da in der Übergangsphase, in der PV vom oder an das Netz geht, die Erzeugung und Last nie perfekt ausgeglichen sein können.
       </p>
+
+      <figure><img src={Abbildung6} alt= "Zeitliche Aktivierungsabfolge der Regelenergiearten (Quelle: www.nextkraftwerke.de)" />
+        <figcaption>Abbildung 6: Heatmap der abgerufenen SRL im Jahr 2024 (eigene Darstellung, Quelle: regelleistung.net).</figcaption>
+      </figure>
+      
       <p>
          Auch die Häufigkeit von extremen Ereignissen mit sehr hohem Leistungsabruf nimmt ab. Dies liegt zum einen am geografischen Ausgleichseffekt der dezentralen Erneuerbaren.
       </p>
@@ -117,14 +126,14 @@ function Erkenntnisse() {
         Dieser Effekt ist die Grundlage des vom Fraunhofer-Institut propagierten zellulären Ansatzes [2]. Die Idee ist, das Stromnetz in regionale Zellen zu gliedern, die primär versuchen, Erzeugung und Verbrauch lokal auszugleichen. Wenn der Strom einer Solaranlage direkt im selben Ort verbraucht wird, stabilisiert dies das System von unten nach oben. Je besser sich diese Zellen selbst ausbalancieren, desto seltener muss der ÜNB zentral mit teurer Regelleistung eingreifen.
       </p>
 
-      "BILDER EINFÜGEN"
+       "Bild EInfügen"
 
       <h3>Korrelation von Sekundär- und Tertiärregelleistung</h3>
       <p>
         Der Vergleich der Daten bestätigt die Hypothese, dass Jahre mit vielen SRL-Großereignissen auch einen hohen TRL-Abruf zur Folge haben.
       </p>
 
-      "BILDER EINFÜGEN"
+      "BILD EInfügen"
 
       <p>
          Die deutliche Korrelation und der gemeinsame Rückgang nach 2020 zeigen, wie Marktund Prognoseverbesserungen das Gesamtsystem stabilisiert haben.
