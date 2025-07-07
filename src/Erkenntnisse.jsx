@@ -2,8 +2,12 @@
 
 import React from 'react';
 import meinBild from './Bilder/Abbildung1.jpg';
+import Abbildung3 from './Bilder/Abbildung3.jpg';
+import Abbildung4 from './Bilder/Abbildung4.jpg';
 import Abbildung5 from './Bilder/Abbildung5.jpg';
 import Abbildung6 from './Bilder/Abbildung6.jpg';
+import Abbildung7 from './Bilder/Abbildung7.jpg';
+import Abbildung7_1 from './Bilder/Abbildung7_1.jpg';
 
 function Erkenntnisse() {
   return (
@@ -72,7 +76,9 @@ function Erkenntnisse() {
       </p>
       <h2>Analyse der Sekundärregelleistung in Deutschland</h2>
 
-      "BILD EINFÜGEN"
+      <figure><img src={Abbildung3} alt= "Abbildung3" />
+        <figcaption>Abbildung 3: Jährlich abgerufene SRL-Arbeit in GWh (Quelle: regelleistung.net).</figcaption>
+      </figure>
 
       <p>
         Die jährlich abgerufene Sekundärregelenergie ist seit Jahren rückläufig. Ausschlaggebend dafür sind vier Mechanismen. Einer dieser Mechanismen ist das Imbalance Netting auf EU Ebene. Erste regionale Umsetzung gab es bereits im Rahmen der Grid Control Cooperation (GCC)zwischen deutschen ÜNBs im Zeitraum Juni–Dezember 2008. EU-weit verpflichtend ist es seit dem 24. Juni 2021. Die EU-weite Verpflichtung ging mit der Einführung von PICASSO einher. PICASSO ist eine Plattform zur Koordinierung und Handel von SRL. Ein wesentlicher Vorteil dieses Systems ist die Reduktion des gesamten aktivierten Regelbedarfs. Wenn beispielsweise die deutsche Regelzone einen Überschuss von 500 MWaufweist und die französische Zone zeitgleich ein Defizit von 500 MW, können sich diese entgegengesetzten Bedarfe gegenseitig aufheben. Anstatt in beiden Ländern Regelleistung zu aktivieren, wird der Austausch über die Plattform optimiert, was den Gesamtbedarf an physisch aktivierter Leistung senkt und die Effizienz des Gesamtsystems steigert [4]. Großen Einfluss auf die Abnahme der jährlich abgerufenen Sekundärregelleistung haben auch die immer besser werdenden Wetter- und Lastprognosen. Schon im Jahr 2015 präsentierten Forschungsarbeiten robuste statistische Prognosemodelle wie EMOS, die prognostizierte Windgeschwindigkeit auf lokaler Ebene deutlich verbessern konnten. Ab rund 2019–2021 wurden Maschinelearning-basierte Methoden in Einspeiseforecast Systemen des Deutschen Wetter Dienstes und der Übertragungsnetzbetreiber integriert, was zu Genauigkeitsgewinnen führte. Ein weiter Erkenntnis aus einer Studie von 2010 ist, dass Prognosen deutlich genauer werden, je näher der Prognosezeitpunkt an der tatsächlichen Lieferung liegt. So lag die Fehlerquote von Windprognosen am Tag davor bei 5,7% und 2 Stunden davor nur noch bei 2,6%. Damit die aktuelleren Prognosen überhaupt dafür sorgen können, dass die abgerufene Sekundärregelenergie weniger wird benötigt es auch eine schnellere Reaktionszeit der Strommärkte. So hat sich am 14. september 2011 die Zeit in der man Strom kaufen oder verkaufen kann von 60 auf 15 Minuten verkürzt. Seit 2020 ist auch grenzüberschreitender Handel mit 15-Minuten-Produkten möglich. Das sogenannte Gate-Closure bezeichnet, wie viele Minuten vor der physischen Lieferung noch Strom gekauft oder verkauft werden kann. Diese Zeit wurde ab dem Juli 2015 von 45-60 Minuten auf 30 reduziert. In den Jahren 2018-2019 wurde diese Zeit in einigen Ländern, unter anderem in Deutschland, auf 5 Minuten reduziert. Diese erhöhte Flexibilität der Strommärkte ist sehr wichtig um nicht bei jeder Wetteränderung Sekundärregelleistung abrufen zu müssen.
@@ -82,7 +88,9 @@ function Erkenntnisse() {
         Der Ausbau der erneuerbaren Energien in Deutschland schreitet rasant voran, mit dem Ziel, bis 2030 einen Anteil von 80% an der Bruttostromerzeugung zu erreichen. Die Hauptenergiequellen sind dabei Solar- und Windenergie.
       </p>
 
-        "BILDER EINFÜGEN"
+        <figure><img src={Abbildung4} alt= "Abbildung3" />
+        <figcaption>Abbildung 4: Entwicklung der Bruttostromerzeugung aus erneuerbaren Energien in Deutschland (Quelle: Umweltbundesamt).</figcaption>
+      </figure>
 
       <p>
         Da diese beiden Technologien stark von dem Wetter abhängig sind, ist eine Aufrechterhaltung des Stromnetzes mit ihnen allein nicht immer gewährleistet. Die Sekundärregelleistung ist mit ihrer Einschaltzeit von 30 Sekunden bestens dafür geeignet, unerwartete wetterbedingte Schwankungen im Stromnetz auszugleichen. Daraus würde man vermuten, dass die Menge an Sekundärregelenergie, die jährlich abgerufen wird, mit dem Ausbau der Erneuerbaren zunimmt. Tatsächlich ist es so, dass die Sekundärregelenergie seit Jahren immer weiter abnimmt. [6].
@@ -118,7 +126,7 @@ function Erkenntnisse() {
       <figure><img src={Abbildung6} alt= "Zeitliche Aktivierungsabfolge der Regelenergiearten (Quelle: www.nextkraftwerke.de)" />
         <figcaption>Abbildung 6: Heatmap der abgerufenen SRL im Jahr 2024 (eigene Darstellung, Quelle: regelleistung.net).</figcaption>
       </figure>
-      
+
       <p>
          Auch die Häufigkeit von extremen Ereignissen mit sehr hohem Leistungsabruf nimmt ab. Dies liegt zum einen am geografischen Ausgleichseffekt der dezentralen Erneuerbaren.
       </p>
@@ -126,7 +134,33 @@ function Erkenntnisse() {
         Dieser Effekt ist die Grundlage des vom Fraunhofer-Institut propagierten zellulären Ansatzes [2]. Die Idee ist, das Stromnetz in regionale Zellen zu gliedern, die primär versuchen, Erzeugung und Verbrauch lokal auszugleichen. Wenn der Strom einer Solaranlage direkt im selben Ort verbraucht wird, stabilisiert dies das System von unten nach oben. Je besser sich diese Zellen selbst ausbalancieren, desto seltener muss der ÜNB zentral mit teurer Regelleistung eingreifen.
       </p>
 
-       "Bild EInfügen"
+        <figure style={{ width: '100%', marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+          <figure style={{ flex: 1, margin: 0 }}>
+            <img 
+              src={Abbildung7} 
+              alt="Abbildung7" 
+              style={{ width: '100%' }} 
+            />
+            <figcaption style={{ fontSize: '0.9rem', color: '#555' }}>
+              (a) Anzahl der Viertelstunden mit einem SRL Abruf ¿ 500 MW.
+            </figcaption>
+          </figure>
+          <figure style={{ flex: 1, margin: 0 }}>
+            <img 
+              src={Abbildung7_1} 
+              alt="Abbildung7" 
+              style={{ width: '100%' }} 
+            />
+            <figcaption style={{ fontSize: '0.9rem', color: '#555' }}>
+               (b) Anzahl der Viertelstunden mit einem SRL Abruf ¿ 1500 MW.
+            </figcaption>
+          </figure>
+        </div>
+        <figcaption style={{ textAlign: 'center', marginTop: '1rem', fontWeight: 'bold' }}>
+          Abbildung 7: Vergleich der H¨ aufigkeit von Großereignissen (Quelle: regelleistung.net).
+        </figcaption>
+      </figure>
 
       <h3>Korrelation von Sekundär- und Tertiärregelleistung</h3>
       <p>
