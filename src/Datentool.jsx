@@ -63,7 +63,6 @@ function Datentool() {
               <select name="select" aria-label="Select" required onChange={handleSwitch} defaultValue={graphType}>
                 <option value={"line"}>Linegraph</option>
                 <option value={"heatmap"}>Heatmap</option>
-                <option value={"line-compare"}>Vergleiche 2 Leistungsarten</option>
               </select>
             </label>
           </div>
