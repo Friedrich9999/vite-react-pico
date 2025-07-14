@@ -23,7 +23,7 @@ const faqData = [
   },
   {
     question: "Wo sind die FCR-Daten?",
-    answer: "gggg"
+    answer: "Die Daten zur FCR sind europaweit verknüpft. Die Daten Sie sind nicht auf Deutschland beschränkt, was den Vergleich von Daten schwieriger macht. Zudem werden Störungen im europäischen Verbundnetz nicht mehr einem einzelnen Land zugeordnet. Der FCR-Bedarf wird gemeinsam von mehreren Übertragungsnetzbetreibern in einem synchronisierten Netz ENTSO-E (European Network of Transmission System Operators for Electricity) festgestellt."
   },
   {
     question: "Für wen ist das Tool gedacht?",
@@ -35,20 +35,8 @@ const faqData = [
   },
   {
     question: "Warum gibt es Daten nur ab 2013?",
-    answer: "ggggg"
+    answer: "Vor 2013 wurden Regelenergie-Daten nicht flächendeckend oder maschinenlesbar erfasst. Erst mit der Energiewende stieg die Bedeutung der Transparenz. Ältere Daten wären lückenhaft oder schwer vergleichbar."
   },
-  {
-    question: "Frage",
-    answer: "ggg"
-  },
-  {
-    question: "Frage",
-    answer: "ggg"
-  },
-  {
-    question: "Frage",
-    answer: "ggg"
-  }
 ];
 
 function FAQ() {
