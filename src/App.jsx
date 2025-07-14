@@ -37,7 +37,7 @@ function App() {
         </main>
 
         <footer className='container'>
-          <p>Stand 8.07.2025</p>
+          <p>Stand 15.07.2025</p>
         </footer>
     </Router>
   );
