@@ -207,6 +207,90 @@ function Erkenntnisse() {
               https://data.bundesnetzagentur.de/...
             </a>
           </li>
+          <li>
+            Next Kraftwerke. <i>Was ist Primärregelleistung (PRL)?</i>
+            Verfügbar unter:
+            <a href="https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung" target="_blank" rel="noopener noreferrer">
+              https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung
+            </a>
+          </li>
+          <li>
+            Entsoe. <i>Imbalance Netting</i>
+            Verfügbar unter:
+            <a href="https://www.entsoe.eu/network_codes/eb/imbalance-netting/" target='_blank' rel='noopener noreferer'>
+              https://www.entsoe.eu/network_codes/eb/imbalance-netting/
+            </a>
+          </li>
+          <li>
+            Entsoe. <i>European Balancing Market Report</i> Jährliche Publikation.
+            Verfügbar unter:
+            <a href='https://eepublicdownloads.blob.core.windows.net/strapi-test-assets/strapi-assets/entso-e_Market_report_2025.pdf' target='_blank' rel='noopener nonreferer'>
+              https://eepublicdownloads.blob.core.windows.net/strapi-test-assets/strapi-assets/entso-e_Market_report_2025.pdf
+            </a>
+          </li>
+          <li>
+            MDPI<i>Probabilistic Forecasting of German Electricity Imbalance Prices</i>
+            Verfügbar online unter:
+            <a href='https://www.mdpi.com/1996-1073/15/14/4976' target='_blank' rel='noopener nonreferer'>
+              https://www.mdpi.com/1996-1073/15/14/4976
+            </a>
+          </li>
+          <li>
+            CESOC <i>Large‑Scale Deep Learning for the Earth System – Abstracts</i>
+            Verfügbar unter:
+            <a href='https://cesoc.net/lsdles-workshop-abstracts/' target='_blank' rel='noopener nonreferer'>
+              https://cesoc.net/lsdles-workshop-abstracts/
+            </a>
+          </li>
+          <li>
+            North American Electric Reliability Corporation <i>Variable Generation Power Forecasting for Operations</i>
+            Verfügbar online unter:
+            <a href='https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf' target='_blank' rel='noopener nonreferer'>
+              https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf
+            </a>
+          </li>
+          <li>
+            EPEX SPOT <i>SIDC: Expansion of 30 and 15‑minute products and Revised Local Implementation Project 14 Go‑Live</i>
+            <a href='https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live' target='_blank' rel='noopener nonreferer'>
+              https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live
+            </a>
+          </li>
+          <li>
+            Next Kraftwerke. <i>Intraday Trading: Definition, theory and practice</i>
+            <a href='https://www.next-kraftwerke.com/knowledge/intraday-trading' target='_blank' rel='noopener nonreferer'>
+              https://www.next-kraftwerke.com/knowledge/intraday-trading
+            </a>
+          </li>
+          <li>
+            Frauenhofer IEE (2020) <i>Bedarf an Regelenergie sinkt trotz mehr Erneuerbaren Energien</i>
+            <a href='https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html' target='_blank' rel='noopener nonreferer'>
+              https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html
+            </a>
+          </li>
+          <li>
+            International Renewable Energy Agency (IRENA) <i>Innovation landscape brief: Increasing time granularity in electricity markets</i>
+            <a href='https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf' target='_blank' rel='noopener nonreferer'>
+              https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf
+            </a>
+          </li>
+          <li>
+            SienceDirect. <i>How good are TSO load and renewable generation forecasts: Learning curves, challenges, and the road ahead</i>
+            <a href='https://www.sciencedirect.com/science/article/pii/S0306261922008753' target='_blank' rel='noopener nonreferer'>
+              https://www.sciencedirect.com/science/article/pii/S0306261922008753
+            </a>
+          </li>
+          <li>
+            Wikipedia. <i>Photovoltaik in Deutschland</i>
+            <a href='https://de.wikipedia.org/wiki/Photovoltaik_in_Deutschland' target='__blank' rel='noopener nonreferer'>
+              https://de.wikipedia.org/wiki/Photovoltaik_in_Deutschland
+            </a>
+          </li>
+          <li>
+            Frauenhofer ISE <i>Fakten zur Photovoltaik</i>
+            <a href='https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html' target='_blank' rel='noopener nonreferer'>
+              https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html
+            </a>
+          </li>
         </ol>
       </section>
 
