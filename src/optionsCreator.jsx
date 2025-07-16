@@ -15,9 +15,7 @@ function getOptionsLineDate(data){
     return {
     tooltip: {
       trigger: 'axis',
-      position: function (pt) {
-        return [pt[0], '0%'];
-      }
+      snap: true,
     },
     title: {
       left: 'center',
@@ -41,6 +39,7 @@ function getOptionsLineDate(data){
       bottom: '0%',
     },
     xAxis: {
+      name: "Datum",
       type: 'category',
       boundaryGap: false,
       data: data.xAxis
@@ -67,15 +66,39 @@ function getOptionsLineDate(data){
 }
 
 function GetOptionsHeatmap(data){
-    const opt = {
-    tooltip: {},
+  const opt = {
+    tooltip: {
+    },
     xAxis: {
         type: 'category',
-        data: data.xAxis
+        data: data.xAxis,
+        axisPointer:{
+          type: 'line',
+          triggerEmphasis: false,
+          show: true
+        }
+    },
+    title: {
+      left: 'center',
+      text: data.chartName
     },
     yAxis: {
         type: 'category',
-        data: data.yAxis
+        data: data.yAxis,
+        axisPointer:{
+          type: 'line',
+          triggerEmphasis: false,
+          show: true
+        }
+    },
+    toolbox: {
+      feature: {
+        dataZoom: {
+          yAxisIndex: 'none'
+        },
+        restore: {},
+        saveAsImage: {}
+      }
     },
     visualMap: {
         min: data.min,
@@ -100,7 +123,7 @@ function GetOptionsHeatmap(data){
     },
     series: [
         {
-        name: 'Gaussian',
+        name: data.seriesName,
         type: 'heatmap',
         data: data.data,
         emphasis: {
@@ -111,7 +134,12 @@ function GetOptionsHeatmap(data){
         },
         progressive: 1000
         }
-    ]
+    ],
+    dataZoom: [
+      {
+        bottom:"-10%"
+      }
+    ],
     };
     console.log(opt)
     
