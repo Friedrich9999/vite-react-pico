@@ -132,8 +132,8 @@ function Erkenntnisse() {
 
       <h3>Analyse der Einsatzzeiten: Die Heatmaps</h3>
       <p>
-        Trotz der insgesamt verbesserten Prognosen konzentriert sich der verbleibende Bedarf an Regelleistung auf die sogenannten Rampenzeiten in den Morgen- und Abendstunden, wenn sich die Erzeugungs- und Lastverhältnisse schnell ändern. Um diese Ereignisse zu visualisieren, werden Heatmaps verwendet, in denen die Intensität der Farbe den abgerufenen Leistungsbedarf darstellt. Dabei bildet die horizontale X-Achse den Jahresverlauf ab, während die vertikale Y-Achse die Tageszeit von 0 bis 24 Uhr darstellt. Negative Regelleistung (blau) wird bei einer Überproduktion abgerufen, während positive Regelleistung (rot) bei einem Strommangel benötigt wird.
-      </p>
+        Der Bedarf an Regelleistung häuft sich an den sogenannten Rampenzeiten in den Morgen-und Abendstunden, wenn sich die Erzeugungs- und Lastverhältnisse schnell ändern. Um diese Ereignisse zu visualisieren, werden Heatmaps verwendet, in denen die Intensität der Farbe den abgerufenen Leistungsbedarf darstellt. Dabei bildet die horizontale X-Achse den Jahresverlauf ab, während die vertikale Y-Achse die Tageszeit von 0 bis 24 Uhr darstellt. Negative Regelleistung (blau) wird bei einer Überproduktion abgerufen, während positive Regelleistung (rot) bei einem Strommangel benötigt wird.     
+     </p>
 
       <figure style={{ margin: '2rem 0' }}>
         {<img src={Abbildung5} alt="Heatmap der abgerufenen SRL im Jahr 2015" style={{ width: '100%' }} />}
@@ -141,10 +141,14 @@ function Erkenntnisse() {
       </figure>
 
       <p>
-        Die sogenannte „Abendrampe“ beschreibt den Zeitraum nach Sonnenuntergang, in dem die Solarstromproduktion abrupt abfällt, während der Stromverbrauch in den frühen Abendstunden weiterhin hoch bleibt. Im Jahr 2015, als die Flexibilität des Systems noch stärker auf den nationalen Markt beschränkt war, führte dies zu konzentrierten Häufungen von SRL-Abrufen. Im Jahr 2024 hingegen kann durch die europäische Marktintegration auf eine Vielzahl zusätzlicher, flexibler Anbieter zurückgegriffen werden. Dadurch wird die Abendrampe effizienter ausgeglichen, was sich in einem breiteren, weniger intensiven Abrufmuster zeigt. Weiterhin ist zu erkennen, dass die Abendrampe im Sommer aufgrund der höheren PV-Erzeugung stärker ausgeprägt ist als im Winter.
+        Die sogenannte ”Abendrampe“ beschreibt den Zeitraum nach Sonnenuntergang, in dem die Solarstromproduktion zurückgeht, während der Stromverbrauch in den frühen Abend-stunden ansteigt, weil viele Menschen nach Hause kommen und Energie verbrauchen. In dieser Übergangsphase würde ohne den Einsatz von Sekundärregelleistung (SRL) eine Differenz zwischen Erzeugung und Verbrauch entstehen. Weiterhin ist zu erkennen, dass die Abendrampe im Sommer stärker ausgeprägt ist als im Winter. Das liegt daran, dass die PV-Erzeugung im Winter deutlich niedriger ist und Windenergie nicht das gleiche Verhalten aufweist.      
       </p>
       <p>
-        Die „Morgenrampe“ ist in der Regel weniger kritisch, da der steigende Stromverbrauch am Morgen oft mit dem gleichzeitigen Anstieg der Solarstromproduktion einhergeht. Die wachsende Nachfrage kann so bereits zu einem großen Teil durch die zunehmende PV-Erzeugung gedeckt werden, was die Herausforderung für das Stromsystem im Vergleich zur Abendrampe deutlich reduziert.
+        Die ”Morgenrampe“ ist in der Regel weniger kritisch, da der steigende Stromverbrauch am Morgen oft mit dem gleichzeitigen Anstieg der Solarstromproduktion einhergeht. Die wachsende Nachfrage kann so bereits zu einem großen Teil durch die zunehmende PV-Erzeugung gedeckt werden, was die Herausforderung für das Stromsystem im Vergleich zur Abendrampe reduziert.      
+      </p>
+
+      <p>
+        Im Jahr 2015 war die Bereitstellung von Regelleistung hauptsächlich auf den deutschen Regelenergiemarkt beschränkt, wodurch Flexibilität und Reaktionsmöglichkeiten limitiert waren. Im Jahr 2024 hingegen kann durch die europäische Marktintegration auf eine Vielzahl zusätzlicher, flexibler Anbieter zurückgegriffen werden, sodass die Abendrampe effizienter und mit einem geringeren Bedarf an SRL ausgeglichen werden kann. Eine weitere Unterstützung hierbei liefern auch die verbesserten Lastprognosen. Die ”Abendrampe“ im Jahr 2024 ist breiter und es ist ein Rückgang der Häufungen zur Sonnenuntergangszeit zu sehen.
       </p>
 
       <figure style={{ margin: '2rem 0' }}>
@@ -153,13 +157,14 @@ function Erkenntnisse() {
       </figure>
 
       <p>
-        Der Vergleich der beiden Grafiken zeigt, dass das gesamte Volumen der Sekundärregelleistung deutlich abgenommen hat, was die Beobachtung aus Abbildung 3 bestätigt. Im grünen Bereich der Grafik ist zu erkennen, dass im Sommer 2015, bei einer installierten PV-Leistung von rund 40 GW <a href="#ref15" style={citationStyle}>[15]</a>, sehr häufig SRL abgerufen werden musste.
+        Der Vergleich der beiden Grafiken zeigt ebenfalls, dass das gesamte Volumen der Sekundärregelleistung deutlich abgenommen hat, was die Beobachtung aus Abbildung 3 bestätigt. Im grünen Bereich der Grafik ist zu erkennen, dass im Sommer 2015, bei einer installierten PV-Leistung von rund 40 GW <a href="#ref15" style={citationStyle}>[15]</a>, sehr häufig SRL abgerufen werden musste.    
+      </p>
+
+      <p>
+        Auffällig ist, dass im Vergleich dazu im Jahr 2024 trotz deutlich höherer installierter PV-Leistung (über 100 GW) und sogar überdurchschnittlicher Sonneneinstrahlung im Sommer wesentlich weniger SRL zur Mittagszeit abgerufen wurde. Dies verdeutlicht, dass die Integration von Solarenergie in das Stromsystem deutlich verbessert werden konnte und das System heute weniger empfindlich auf die stark schwankende Solarstromerzeugung reagiert.      
       </p>
       <p>
-        Auffällig ist, dass im Vergleich dazu im Jahr 2024 trotz deutlich höherer installierter PV-Leistung (über 100 GW) und sogar überdurchschnittlicher Sonneneinstrahlung wesentlich weniger SRL zur Mittagszeit benötigt wurde. Dies verdeutlicht, dass die Integration der Solarenergie in das Stromsystem erheblich verbessert werden konnte.
-      </p>
-      <p>
-        Im lila Bereich der 2015er-Grafik ist zudem ein sehr windreicher Frühling zu erkennen, der durch hohe negative Regelleistungsabrufe gekennzeichnet war. Dies zeigt die starke Wetterabhängigkeit des damaligen Systems. Im Gegensatz dazu fällt auf, dass im Jahr 2024 die Abhängigkeit des SRL-Abrufs vom Wetter deutlich geringer ist. Trotz extremerer Wetterlagen mussten wesentlich weniger kurzfristige Eingriffe vorgenommen werden, was die Fortschritte bei der Flexibilisierung des Stromsystems unterstreicht.
+        Im lila Bereich der 2015er-Grafik ist zudem ein sehr windreicher Frühling zu erkennen, der durch hohe negative Regelleistungsabrufe gekennzeichnet war. Dies zeigt die starke Wetterabhängigkeit des damaligen Systems. Im Gegensatz dazu fällt auf, dass im Jahr 2024 die Abhängigkeit des SRL-Abrufs von dem Wetter deutlich geringer ist. Trotz extremerer Wetterlagen mussten wesentlich weniger kurzfristige Eingriffe vorgenommen werden, was die Fortschritte bei der Flexibilisierung des Stromsystems unterstreicht und vorallem auf die deutlich besseren Wetterprognosen zurückzuführen ist.    
       </p>
 
       <h3>Rückgang von Großereignissen</h3>
