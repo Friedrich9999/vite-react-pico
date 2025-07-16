@@ -203,7 +203,7 @@ function Erkenntnisse() {
           <h2>Literaturverzeichnis</h2>
         <ol>
           <li id="ref1">
-            Fraunhofer-Gesellschaft. <i>Stabile Stromversorgung durch netzbildende Wechselrichter</i>. 
+            Fraunhofer-Gesellschaft. <i>Stabile Stromversorgung durch netzbildende Wechselrichter</i>. Pressemitteilung, Dez. 2021. 
           <br /> Verfügbar unter:&nbsp;
           <a href="https://www.fraunhofer.de/de/presse/presseinformationen/2021/dezember-2021/stabile-stromversorgung-durch-netzbildende-wechselrichter.html" target="_blank" rel="noopener noreferrer">
             https://www.fraunhofer.de/de/presse/presseinformationen/2021/dezember-2021/stabile-stromversorgung-durch-netzbildende-wechselrichter.html
@@ -212,7 +212,6 @@ function Erkenntnisse() {
     
           <li id="ref2">
             Deutsche Energie-Agentur (dena). <i>dena-Leitstudie Aufbruch Klimaneutralität</i>. 
-            
             <br />Verfügbar unter:&nbsp;
             <a href="https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2021/Abschlussbericht_dena-Leitstudie_Aufbruch_Klimaneutralitaet.pdf" target="_blank" rel="noopener noreferrer">
               https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2021/Abschlussbericht_dena-Leitstudie_Aufbruch_Klimaneutralitaet.pdf
@@ -228,22 +227,20 @@ function Erkenntnisse() {
           </li>
           <li id="ref4">
             Next Kraftwerke. <i>Was ist Primärregelleistung (PRL)?</i>
-             
               <br />Verfügbar unter:&nbsp;
             <a href="https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung" target="_blank" rel="noopener noreferrer">
               https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung
             </a>
           </li>
           <li id="ref5">
-            Entsoe. <i>Imbalance Netting</i>
-            
+            ENTSOE. <i>Imbalance Netting</i>, ENTSO-E
             <br />Verfügbar unter:&nbsp;
             <a href="https://www.entsoe.eu/network_codes/eb/imbalance-netting/" target='_blank' rel='noopener noreferer'>
               https://www.entsoe.eu/network_codes/eb/imbalance-netting/
             </a>
           </li>
           <li id="ref6">
-            Entsoe. <i>European Balancing Market Report</i> Jährliche Publikation.
+            ENTSOE. <i>European Balancing Market Report</i>. Regelmäßige Publikation.
             
             <br />Verfügbar unter:&nbsp;
             <a href='https://eepublicdownloads.blob.core.windows.net/strapi-test-assets/strapi-assets/entso-e_Market_report_2025.pdf' target='_blank' rel='noopener nonreferer'>
@@ -251,51 +248,49 @@ function Erkenntnisse() {
             </a>
           </li>
           <li id="ref7">
-            MDPI. <i>Probabilistic Forecasting of German Electricity Imbalance Prices</i>
-            
-            <br />Verfügbar unter:&nbsp;
+            Narajewski, Michal, <i>Probabilistic Forecasting of German Electricity Imbalance Prices</i>, *Energies*, Band 15, Heft 14, Artikel 4976, 2022. DOI:10.3390/en15144976. Online veröffentlicht am 7.Juli 2022; 
+            <br />Verfügbar online unter:&nbsp;
             <a href='https://www.mdpi.com/1996-1073/15/14/4976' target='_blank' rel='noopener nonreferer'>
               https://www.mdpi.com/1996-1073/15/14/4976
             </a>
           </li>
           <li id="ref8">
-            CESOC. <i>Large‑Scale Deep Learning for the Earth System – Abstracts</i>
-            
+            CESOC. (Center for Earth System Observation and Computational Analysis), <i>Large‑Scale Deep Learning for the Earth System – Abstracts</i>, CESOC.
             <br />Verfügbar unter:&nbsp;
             <a href='https://cesoc.net/lsdles-workshop-abstracts/' target='_blank' rel='noopener nonreferer'>
               https://cesoc.net/lsdles-workshop-abstracts/
             </a>
           </li>
           <li id="ref9">
-            North American Electric Reliability Corporation. <i>Variable Generation Power Forecasting for Operations</i>
+            North American Electric Reliability Corporation. (NERC), <i>Variable Generation Power Forecasting for Operations</i>. IVGTF Task 2.1, Januar 2010.
             <br /> 
             Verfügbar unter:&nbsp;             <a href='https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf' target='_blank' rel='noopener nonreferer'>
               https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf
             </a>
           </li>
           <li id="ref10">
-            EPEX SPOT. <i>SIDC: Expansion of 30 and 15‑minute products and Revised Local Implementation Project 14 Go‑Live</i>
+            EPEX SPOT. <i>SIDC: Expansion of 30 and 15‑minute products and Revised Local Implementation Project 14 Go‑Live</i>, EPEX SPOT Newsroom, 24.November 2020.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live' target='_blank' rel='noopener nonreferer'>
               https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live
             </a>
           </li>
           <li id="ref11">
-            Next Kraftwerke. <i>Intraday Trading: Definition, theory and practice</i>
+            Next Kraftwerke. <i>Intraday Trading: Definition, theory and practice</i>, *NextKraftwerke Knowledge Hub*.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.next-kraftwerke.com/knowledge/intraday-trading' target='_blank' rel='noopener nonreferer'>
               https://www.next-kraftwerke.com/knowledge/intraday-trading
             </a>
           </li>
            <li id="ref12">
-            International Renewable Energy Agency (IRENA). <i>Innovation landscape brief: Increasing time granularity in electricity markets</i>
+            International Renewable Energy Agency (IRENA). <i>Innovation landscape brief: Increasing time granularity in electricity markets</i>, Abu Dhabi, Februar 2019.
             <br />
             Verfügbar unter:&nbsp;            <a href='https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf' target='_blank' rel='noopener nonreferer'>
               https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf
             </a>
           </li>
           <li id="ref13">
-            Frauenhofer IEE (2020). <i>Bedarf an Regelenergie sinkt trotz mehr Erneuerbaren Energien</i>
+            Frauenhofer IEE (2020). <i>Bedarf an Regelenergie sinkt trotz mehr Erneuerbaren Energien</i>.  Pressemitteilung.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html' target='_blank' rel='noopener nonreferer'>
               https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html
@@ -303,8 +298,8 @@ function Erkenntnisse() {
           </li>
          
           <li id="ref14">
-            SienceDirect. <i>How good are TSO load and renewable generation forecasts: Learning curves, challenges, and the road ahead</i>
-            <br />Verfügbar unter:&nbsp;
+            Kazmi, Hussain und Zhenmin Tao, <i>How good are TSO load and renewable generation forecasts: Learning curves, challenges, and the road ahead</i>, *Applied Energy*, Bd.323, Artikel 119565, 2022. DOI: 10.1016/j.apenergy.2022.119565.
+            <br />Verfügbar online unter:&nbsp;
             <a href='https://www.sciencedirect.com/science/article/pii/S0306261922008753' target='_blank' rel='noopener nonreferer'>
               https://www.sciencedirect.com/science/article/pii/S0306261922008753
             </a>
@@ -317,7 +312,7 @@ function Erkenntnisse() {
             </a>
           </li>
           <li id="ref16">
-            Frauenhofer ISE. <i>Fakten zur Photovoltaik</i>
+            Frauenhofer ISE. <i>Fakten zur Photovoltaik</i> Faktenblattsammlung, laufend aktualisiert.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html' target='_blank' rel='noopener nonreferer'>
               https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html
