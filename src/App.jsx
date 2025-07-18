@@ -18,8 +18,8 @@ function App() {
             </ul>
             <ul>
               {/* 2. Hier sind die Links, die die URL ändern */}
-              <li><Link to="/erkentnisse">Unsere Erkenntnisse</Link></li>
-              <li><Link to="/">Datentool</Link></li>
+              <li><Link to="/">Unsere Erkenntnisse</Link></li>
+              <li><Link to="/datentool">Datentool</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/kontakte">Kontakt</Link></li>
             </ul>
@@ -29,9 +29,9 @@ function App() {
         <main className='container'>
           {/* 3. Hier entscheidet der Router, welche Komponente geladen wird */}
           <Routes>
-            <Route path="/" element={<Datentool />} />
+            <Route path="/datentool" element={<Datentool />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/erkentnisse" element={<Erkenntnisse />} />
+            <Route path="/" element={<Erkenntnisse />} />
             <Route path="/kontakte" element={<Kontakt />} />
           </Routes>
         </main>
