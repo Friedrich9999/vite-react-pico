@@ -29,9 +29,9 @@ function App() {
         <main className='container'>
           {/* 3. Hier entscheidet der Router, welche Komponente geladen wird */}
           <Routes>
+            <Route path="/" element={<Erkenntnisse />} />
             <Route path="/datentool" element={<Datentool />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/" element={<Erkenntnisse />} />
             <Route path="/kontakte" element={<Kontakt />} />
           </Routes>
         </main>
