@@ -132,8 +132,8 @@ function Erkenntnisse() {
 
       <h3>Analyse der Einsatzzeiten: Die Heatmaps</h3>
       <p>
-        Trotz der insgesamt verbesserten Prognosen konzentriert sich der verbleibende Bedarf an Regelleistung auf die sogenannten Rampenzeiten in den Morgen- und Abendstunden, wenn sich die Erzeugungs- und Lastverhältnisse schnell ändern. Um diese Ereignisse zu visualisieren, werden Heatmaps verwendet, in denen die Intensität der Farbe den abgerufenen Leistungsbedarf darstellt. Dabei bildet die horizontale X-Achse den Jahresverlauf ab, während die vertikale Y-Achse die Tageszeit von 0 bis 24 Uhr darstellt. Negative Regelleistung (blau) wird bei einer Überproduktion abgerufen, während positive Regelleistung (rot) bei einem Strommangel benötigt wird.
-      </p>
+        Der Bedarf an Regelleistung häuft sich an den sogenannten Rampenzeiten in den Morgen-und Abendstunden, wenn sich die Erzeugungs- und Lastverhältnisse schnell ändern. Um diese Ereignisse zu visualisieren, werden Heatmaps verwendet, in denen die Intensität der Farbe den abgerufenen Leistungsbedarf darstellt. Dabei bildet die horizontale X-Achse den Jahresverlauf ab, während die vertikale Y-Achse die Tageszeit von 0 bis 24 Uhr darstellt. Negative Regelleistung (blau) wird bei einer Überproduktion abgerufen, während positive Regelleistung (rot) bei einem Strommangel benötigt wird.     
+     </p>
 
       <figure style={{ margin: '2rem 0' }}>
         {<img src={Abbildung5} alt="Heatmap der abgerufenen SRL im Jahr 2015" style={{ width: '100%' }} />}
@@ -141,10 +141,14 @@ function Erkenntnisse() {
       </figure>
 
       <p>
-        Die sogenannte „Abendrampe“ beschreibt den Zeitraum nach Sonnenuntergang, in dem die Solarstromproduktion abrupt abfällt, während der Stromverbrauch in den frühen Abendstunden weiterhin hoch bleibt. Im Jahr 2015, als die Flexibilität des Systems noch stärker auf den nationalen Markt beschränkt war, führte dies zu konzentrierten Häufungen von SRL-Abrufen. Im Jahr 2024 hingegen kann durch die europäische Marktintegration auf eine Vielzahl zusätzlicher, flexibler Anbieter zurückgegriffen werden. Dadurch wird die Abendrampe effizienter ausgeglichen, was sich in einem breiteren, weniger intensiven Abrufmuster zeigt. Weiterhin ist zu erkennen, dass die Abendrampe im Sommer aufgrund der höheren PV-Erzeugung stärker ausgeprägt ist als im Winter.
+        Die sogenannte ”Abendrampe“ beschreibt den Zeitraum nach Sonnenuntergang, in dem die Solarstromproduktion zurückgeht, während der Stromverbrauch in den frühen Abend-stunden ansteigt, weil viele Menschen nach Hause kommen und Energie verbrauchen. In dieser Übergangsphase würde ohne den Einsatz von Sekundärregelleistung (SRL) eine Differenz zwischen Erzeugung und Verbrauch entstehen. Weiterhin ist zu erkennen, dass die Abendrampe im Sommer stärker ausgeprägt ist als im Winter. Das liegt daran, dass die PV-Erzeugung im Winter deutlich niedriger ist und Windenergie nicht das gleiche Verhalten aufweist.      
       </p>
       <p>
-        Die „Morgenrampe“ ist in der Regel weniger kritisch, da der steigende Stromverbrauch am Morgen oft mit dem gleichzeitigen Anstieg der Solarstromproduktion einhergeht. Die wachsende Nachfrage kann so bereits zu einem großen Teil durch die zunehmende PV-Erzeugung gedeckt werden, was die Herausforderung für das Stromsystem im Vergleich zur Abendrampe deutlich reduziert.
+        Die ”Morgenrampe“ ist in der Regel weniger kritisch, da der steigende Stromverbrauch am Morgen oft mit dem gleichzeitigen Anstieg der Solarstromproduktion einhergeht. Die wachsende Nachfrage kann so bereits zu einem großen Teil durch die zunehmende PV-Erzeugung gedeckt werden, was die Herausforderung für das Stromsystem im Vergleich zur Abendrampe reduziert.      
+      </p>
+
+      <p>
+        Im Jahr 2015 war die Bereitstellung von Regelleistung hauptsächlich auf den deutschen Regelenergiemarkt beschränkt, wodurch Flexibilität und Reaktionsmöglichkeiten limitiert waren. Im Jahr 2024 hingegen kann durch die europäische Marktintegration auf eine Vielzahl zusätzlicher, flexibler Anbieter zurückgegriffen werden, sodass die Abendrampe effizienter und mit einem geringeren Bedarf an SRL ausgeglichen werden kann. Eine weitere Unterstützung hierbei liefern auch die verbesserten Lastprognosen. Die ”Abendrampe“ im Jahr 2024 ist breiter und es ist ein Rückgang der Häufungen zur Sonnenuntergangszeit zu sehen.
       </p>
 
       <figure style={{ margin: '2rem 0' }}>
@@ -153,13 +157,14 @@ function Erkenntnisse() {
       </figure>
 
       <p>
-        Der Vergleich der beiden Grafiken zeigt, dass das gesamte Volumen der Sekundärregelleistung deutlich abgenommen hat, was die Beobachtung aus Abbildung 3 bestätigt. Im grünen Bereich der Grafik ist zu erkennen, dass im Sommer 2015, bei einer installierten PV-Leistung von rund 40 GW <a href="#ref15" style={citationStyle}>[15]</a>, sehr häufig SRL abgerufen werden musste.
+        Der Vergleich der beiden Grafiken zeigt ebenfalls, dass das gesamte Volumen der Sekundärregelleistung deutlich abgenommen hat, was die Beobachtung aus Abbildung 3 bestätigt. Im grünen Bereich der Grafik ist zu erkennen, dass im Sommer 2015, bei einer installierten PV-Leistung von rund 40 GW <a href="#ref15" style={citationStyle}>[15]</a>, sehr häufig SRL abgerufen werden musste.    
+      </p>
+
+      <p>
+        Auffällig ist, dass im Vergleich dazu im Jahr 2024 trotz deutlich höherer installierter PV-Leistung (über 100 GW) und sogar überdurchschnittlicher Sonneneinstrahlung im Sommer wesentlich weniger SRL zur Mittagszeit abgerufen wurde. Dies verdeutlicht, dass die Integration von Solarenergie in das Stromsystem deutlich verbessert werden konnte und das System heute weniger empfindlich auf die stark schwankende Solarstromerzeugung reagiert.      
       </p>
       <p>
-        Auffällig ist, dass im Vergleich dazu im Jahr 2024 trotz deutlich höherer installierter PV-Leistung (über 100 GW) und sogar überdurchschnittlicher Sonneneinstrahlung wesentlich weniger SRL zur Mittagszeit benötigt wurde. Dies verdeutlicht, dass die Integration der Solarenergie in das Stromsystem erheblich verbessert werden konnte.
-      </p>
-      <p>
-        Im lila Bereich der 2015er-Grafik ist zudem ein sehr windreicher Frühling zu erkennen, der durch hohe negative Regelleistungsabrufe gekennzeichnet war. Dies zeigt die starke Wetterabhängigkeit des damaligen Systems. Im Gegensatz dazu fällt auf, dass im Jahr 2024 die Abhängigkeit des SRL-Abrufs vom Wetter deutlich geringer ist. Trotz extremerer Wetterlagen mussten wesentlich weniger kurzfristige Eingriffe vorgenommen werden, was die Fortschritte bei der Flexibilisierung des Stromsystems unterstreicht.
+        Im lila Bereich der 2015er-Grafik ist zudem ein sehr windreicher Frühling zu erkennen, der durch hohe negative Regelleistungsabrufe gekennzeichnet war. Dies zeigt die starke Wetterabhängigkeit des damaligen Systems. Im Gegensatz dazu fällt auf, dass im Jahr 2024 die Abhängigkeit des SRL-Abrufs von dem Wetter deutlich geringer ist. Trotz extremerer Wetterlagen mussten wesentlich weniger kurzfristige Eingriffe vorgenommen werden, was die Fortschritte bei der Flexibilisierung des Stromsystems unterstreicht und vorallem auf die deutlich besseren Wetterprognosen zurückzuführen ist.    
       </p>
 
       <h3>Rückgang von Großereignissen</h3>
@@ -198,7 +203,7 @@ function Erkenntnisse() {
           <h2>Literaturverzeichnis</h2>
         <ol>
           <li id="ref1">
-            Fraunhofer-Gesellschaft. <i>Stabile Stromversorgung durch netzbildende Wechselrichter</i>. 
+            Fraunhofer-Gesellschaft. <i>Stabile Stromversorgung durch netzbildende Wechselrichter</i>. Pressemitteilung, Dez. 2021. 
           <br /> Verfügbar unter:&nbsp;
           <a href="https://www.fraunhofer.de/de/presse/presseinformationen/2021/dezember-2021/stabile-stromversorgung-durch-netzbildende-wechselrichter.html" target="_blank" rel="noopener noreferrer">
             https://www.fraunhofer.de/de/presse/presseinformationen/2021/dezember-2021/stabile-stromversorgung-durch-netzbildende-wechselrichter.html
@@ -207,7 +212,6 @@ function Erkenntnisse() {
     
           <li id="ref2">
             Deutsche Energie-Agentur (dena). <i>dena-Leitstudie Aufbruch Klimaneutralität</i>. 
-            
             <br />Verfügbar unter:&nbsp;
             <a href="https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2021/Abschlussbericht_dena-Leitstudie_Aufbruch_Klimaneutralitaet.pdf" target="_blank" rel="noopener noreferrer">
               https://www.dena.de/fileadmin/dena/Publikationen/PDFs/2021/Abschlussbericht_dena-Leitstudie_Aufbruch_Klimaneutralitaet.pdf
@@ -223,22 +227,20 @@ function Erkenntnisse() {
           </li>
           <li id="ref4">
             Next Kraftwerke. <i>Was ist Primärregelleistung (PRL)?</i>
-             
               <br />Verfügbar unter:&nbsp;
             <a href="https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung" target="_blank" rel="noopener noreferrer">
               https://www.next-kraftwerke.de/wissen/primaerreserve-primaerregelleistung
             </a>
           </li>
           <li id="ref5">
-            Entsoe. <i>Imbalance Netting</i>
-            
+            ENTSOE. <i>Imbalance Netting</i>, ENTSO-E
             <br />Verfügbar unter:&nbsp;
             <a href="https://www.entsoe.eu/network_codes/eb/imbalance-netting/" target='_blank' rel='noopener noreferer'>
               https://www.entsoe.eu/network_codes/eb/imbalance-netting/
             </a>
           </li>
           <li id="ref6">
-            Entsoe. <i>European Balancing Market Report</i> Jährliche Publikation.
+            ENTSOE. <i>European Balancing Market Report</i>. Regelmäßige Publikation.
             
             <br />Verfügbar unter:&nbsp;
             <a href='https://eepublicdownloads.blob.core.windows.net/strapi-test-assets/strapi-assets/entso-e_Market_report_2025.pdf' target='_blank' rel='noopener nonreferer'>
@@ -246,51 +248,49 @@ function Erkenntnisse() {
             </a>
           </li>
           <li id="ref7">
-            MDPI. <i>Probabilistic Forecasting of German Electricity Imbalance Prices</i>
-            
-            <br />Verfügbar unter:&nbsp;
+            Narajewski, Michal, <i>Probabilistic Forecasting of German Electricity Imbalance Prices</i>, *Energies*, Band 15, Heft 14, Artikel 4976, 2022. DOI:10.3390/en15144976. Online veröffentlicht am 7.Juli 2022; 
+            <br />Verfügbar online unter:&nbsp;
             <a href='https://www.mdpi.com/1996-1073/15/14/4976' target='_blank' rel='noopener nonreferer'>
               https://www.mdpi.com/1996-1073/15/14/4976
             </a>
           </li>
           <li id="ref8">
-            CESOC. <i>Large‑Scale Deep Learning for the Earth System – Abstracts</i>
-            
+            CESOC. (Center for Earth System Observation and Computational Analysis), <i>Large‑Scale Deep Learning for the Earth System – Abstracts</i>, CESOC.
             <br />Verfügbar unter:&nbsp;
             <a href='https://cesoc.net/lsdles-workshop-abstracts/' target='_blank' rel='noopener nonreferer'>
               https://cesoc.net/lsdles-workshop-abstracts/
             </a>
           </li>
           <li id="ref9">
-            North American Electric Reliability Corporation. <i>Variable Generation Power Forecasting for Operations</i>
+            North American Electric Reliability Corporation. (NERC), <i>Variable Generation Power Forecasting for Operations</i>. IVGTF Task 2.1, Januar 2010.
             <br /> 
             Verfügbar unter:&nbsp;             <a href='https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf' target='_blank' rel='noopener nonreferer'>
               https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/Varialbe%20Generationn%20Power%20Forecasting%20for%20Operations.pdf
             </a>
           </li>
           <li id="ref10">
-            EPEX SPOT. <i>SIDC: Expansion of 30 and 15‑minute products and Revised Local Implementation Project 14 Go‑Live</i>
+            EPEX SPOT. <i>SIDC: Expansion of 30 and 15‑minute products and Revised Local Implementation Project 14 Go‑Live</i>, EPEX SPOT Newsroom, 24.November 2020.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live' target='_blank' rel='noopener nonreferer'>
               https://www.epexspot.com/en/news/sidc-expansion-30-and-15-minute-products-and-revised-local-implementation-project-14-go-live
             </a>
           </li>
           <li id="ref11">
-            Next Kraftwerke. <i>Intraday Trading: Definition, theory and practice</i>
+            Next Kraftwerke. <i>Intraday Trading: Definition, theory and practice</i>, *NextKraftwerke Knowledge Hub*.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.next-kraftwerke.com/knowledge/intraday-trading' target='_blank' rel='noopener nonreferer'>
               https://www.next-kraftwerke.com/knowledge/intraday-trading
             </a>
           </li>
            <li id="ref12">
-            International Renewable Energy Agency (IRENA). <i>Innovation landscape brief: Increasing time granularity in electricity markets</i>
+            International Renewable Energy Agency (IRENA). <i>Innovation landscape brief: Increasing time granularity in electricity markets</i>, Abu Dhabi, Februar 2019.
             <br />
             Verfügbar unter:&nbsp;            <a href='https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf' target='_blank' rel='noopener nonreferer'>
               https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Feb/IRENA_Increasing_time_granularity_2019.pdf
             </a>
           </li>
           <li id="ref13">
-            Frauenhofer IEE (2020). <i>Bedarf an Regelenergie sinkt trotz mehr Erneuerbaren Energien</i>
+            Frauenhofer IEE (2020). <i>Bedarf an Regelenergie sinkt trotz mehr Erneuerbaren Energien</i>.  Pressemitteilung.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html' target='_blank' rel='noopener nonreferer'>
               https://www.iee.fraunhofer.de/de/presse/presseinformationen/2020/bedarf-an-regelenergie-sinkt-trotz-mehr-erneuerbaren-energien.html
@@ -298,8 +298,8 @@ function Erkenntnisse() {
           </li>
          
           <li id="ref14">
-            SienceDirect. <i>How good are TSO load and renewable generation forecasts: Learning curves, challenges, and the road ahead</i>
-            <br />Verfügbar unter:&nbsp;
+            Kazmi, Hussain und Zhenmin Tao, <i>How good are TSO load and renewable generation forecasts: Learning curves, challenges, and the road ahead</i>, *Applied Energy*, Bd.323, Artikel 119565, 2022. DOI: 10.1016/j.apenergy.2022.119565.
+            <br />Verfügbar online unter:&nbsp;
             <a href='https://www.sciencedirect.com/science/article/pii/S0306261922008753' target='_blank' rel='noopener nonreferer'>
               https://www.sciencedirect.com/science/article/pii/S0306261922008753
             </a>
@@ -312,7 +312,7 @@ function Erkenntnisse() {
             </a>
           </li>
           <li id="ref16">
-            Frauenhofer ISE. <i>Fakten zur Photovoltaik</i>
+            Frauenhofer ISE. <i>Fakten zur Photovoltaik</i> Faktenblattsammlung, laufend aktualisiert.
             <br />Verfügbar unter:&nbsp;
             <a href='https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html' target='_blank' rel='noopener nonreferer'>
               https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/aktuelle-fakten-zur-photovoltaik-in-deutschland.html
