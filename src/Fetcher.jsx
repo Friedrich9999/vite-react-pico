@@ -58,7 +58,7 @@ const fetchData = async (type,startDate, endDate, regions, dataTypes) => {
     },
     body: JSON.stringify(requestBody) // Convert the request body to a JSON string
   };
-  const url = "http://https://htw-projekt.rl-institut.de/backend/" + type
+  const url = "http://htw-projekt.rl-institut.de/backend/" + type
   console.log("URL: " + url)
   const response = await fetch(url, requestOptions);
   console.log("fetch finished");
