@@ -86,7 +86,8 @@ function Datentool() {
         </article>
         <article >
           <h3>Ausgabe</h3>
-            <Fetcher />
+          <p>Alle Daten wurden von <a href='https://www.netztransparenz.de'>netztransparenz.de</a> zur Verfügung gestellt. Wir übernehmen keine Gewähr für die Richtigkeit der Daten</p>
+          <Fetcher />
         </article>
       </FetchingContext.Provider>
     </>
