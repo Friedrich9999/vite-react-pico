@@ -22,7 +22,7 @@ function Erkenntnisse() {
   };
   return (
     <article>
-      <h1 style={{ textAlign: 'center', fontFamily: 'serif', marginBottom: '2rem' }}>
+      <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>
         Die Entwicklung der Regelleleistung in Deutschland im
         <br />
         Zeichen der Energiewende
@@ -68,7 +68,7 @@ function Erkenntnisse() {
         Sekundärregelleistung wird im Rahmen eines europaweit harmonisierten Ausschreibungsprozesses am Regelenergiemarkt beschafft. Die vier deutschen Übertragungsnetzbetreiber (50Hertz, Amprion, TenneT, TransnetBW) schreiben den Bedarf täglich und für unterschiedliche Zeitscheiben aus. Unternehmen, die Sekundärregelleistung anbieten wollen, müssen präqualifiziert sein, das heißt, sie müssen nachweisen, dass sie die geforderte Leistung, Zuverlässigkeit und Aktivierungszeiten einhalten können. Die Aktivierung erfolgt durch eine automatische Abrufung (AGC – Automatic Generation Control) entsprechend dem Bedarf im Netz. Anbieter erhalten sowohl eine Vergütung für die Vorhaltung (Leistungspreis) als auch für die tatsächliche Aktivierung (Arbeitspreis).
       </p>
       <p>
-        Traditionell wurde Sekundärregelleistung hauptsächlich von Großkraftwerken wie konventionellen Gas-, Kohle- und Pumpspeicherkraftwerken bereitgestellt. Inzwischen können jedoch auch dezentrale Anlagen, Batteriespeicher, Industrieprozesse oder Pooling-Anbieter teilnehmen, sofern sie die technischen Anforderungen erfüllen und eine Mindestleistung von 5 MW (seit 2017, davor 10 MW) bündeln können. Das Marktumfeld hat sich durch Digitalisierung und Aggregation zunehmend geöffnet, sodass mittlerweile auch kleinere Anlagen über virtuelle Kraftwerke und Aggregatoren Zugang zum Markt erhalten. Eine immer wichtigere Rolle spielt zudem die Lastverschiebung (Demand-Side-Management): Große industrielle Verbraucher können ihre Prozesse flexibel steuern, um auf Preissignale oder Netzengpässe zu reagieren. Indem sie ihren Verbrauch gezielt in Zeiten hoher Erneuerbaren-Einspeisung legen oder in Knappheitssituationen reduzieren, tragen sie aktiv zur Netzstabilisierung bei und verringern den Bedarf an Regelleistung <a href="#ref2" style={citationStyle}>[2]</a>.
+        Traditionell wurde Sekundärregelleistung hauptsächlich von Großkraftwerken wie konventionellen Gas-, Kohle- und Pumpspeicherkraftwerken bereitgestellt. Inzwischen können jedoch auch dezentrale Anlagen, Batteriespeicher, Industrieprozesse oder Pooling-Anbieter teilnehmen, sofern sie die technischen Anforderungen erfüllen und eine Mindestleistung von 5 MW (seit 2017, davor 10 MW) bündeln können. Das Marktumfeld hat sich durch Digitalisierung und Aggregation zunehmend geöffnet, sodass mittlenetztransparenzrweile auch kleinere Anlagen über virtuelle Kraftwerke und Aggregatoren Zugang zum Markt erhalten. Eine immer wichtigere Rolle spielt zudem die Lastverschiebung (Demand-Side-Management): Große industrielle Verbraucher können ihre Prozesse flexibel steuern, um auf Preissignale oder Netzengpässe zu reagieren. Indem sie ihren Verbrauch gezielt in Zeiten hoher Erneuerbaren-Einspeisung legen oder in Knappheitssituationen reduzieren, tragen sie aktiv zur Netzstabilisierung bei und verringern den Bedarf an Regelleistung <a href="#ref2" style={citationStyle}>[2]</a>.
       </p>
 
       <h3>Tertiärregelleistung</h3>
